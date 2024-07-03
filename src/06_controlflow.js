@@ -64,39 +64,57 @@
     
 /****** Fallunterscheidung / SWITCH|CASE 1 ******/
 
-const firstName = "Jane";
-let job;
+// const firstName = "Jane";
+// let job;
 
-job = "driver";  // .. fährt TAXI! / UBER
-job = "diver"; // .. taucht im Rhein! 
-job = "artist"; // .. malt ein Bild!
-job = "pilot"; // .. macht etwas anderes! --> default
-job = "teacher"; // .. unterrichtet!
-job = "instructor"; // .. unterrichtet!
+// job = "driver";  // .. fährt TAXI! / UBER
+// job = "diver"; // .. taucht im Rhein! 
+// job = "artist"; // .. malt ein Bild!
+// job = "pilot"; // .. macht etwas anderes! --> default
+// job = "teacher"; // .. unterrichtet!
+// job = "instructor"; // .. unterrichtet!
 
 
-switch (job) 
-{
-    case "driver": // job == "driver"
-    console.log(firstName + " fährt TAXI!")
-    break; // "break" trennt die Test's unter einander sonst werden mehrere ergebnise angezeitg!!
-            case "diver": 
-            console.log(firstName + " taucht im Rhein!")
-            break;
-                    case "artist": 
-                    console.log(firstName + " malt ein Bild!")
-                    break;
-                            case "teacher": 
-                            case  "instructor":
-                            console.log(firstName + " unterrichtet!")
-                            break;
-                                    // case "instructor":  // das gleiche wie zwei case´s unter einander mit gleichem ergebnis!!! sie eine oben
-                                    // console.log(firstName + " unterrichtet!")
-                                    // break;
+// switch (job) 
+// {
+//     case "driver": // job == "driver"
+//     console.log(firstName + " fährt TAXI!")
+//     break; // "break" trennt die Test's unter einander sonst werden mehrere ergebnise angezeitg!!
+//             case "diver": 
+//             console.log(firstName + " taucht im Rhein!")
+//             break;
+//                     case "artist": 
+//                     console.log(firstName + " malt ein Bild!")
+//                     break;
+//                             case "teacher": 
+//                             case  "instructor":
+//                             console.log(firstName + " unterrichtet!")
+//                             break;
+//                                     // case "instructor":  // das gleiche wie zwei case´s unter einander mit gleichem ergebnis!!! sie eine oben
+//                                     // console.log(firstName + " unterrichtet!")
+//                                     // break;
 
-    default: // Wichtig!!
-            console.log(firstName + " macht etwas anderes!")
+//     default: // Wichtig!!
+//             console.log(firstName + " macht etwas anderes!")
 
+//         break;
+// }
+
+
+/********  Fallunterscheidung / SWITCH|CASE 2 *******/
+
+const cond = true;
+const value = 3;
+
+switch (cond) {
+        case (value == 1):
+        console.log("Value hat den Wert 1.");
         break;
+                case (value == 2):
+                console.log("Value hat den Wert 2.");
+                break;
+                        default:
+                        console.log("Value hat einen anderen Wert.");
+                        break;
 }
 
