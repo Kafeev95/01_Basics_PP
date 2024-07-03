@@ -62,10 +62,6 @@
 //                                          } else {  console.log("Mark ist älter."); }    // das ist meine Lösung... ist auch richtig!!!
 
     
-/************  Ternäre (ternary) Schreibweise ************/
-// console.log( (isJohnOlder) ? "John is older" : "Mark is older");
-
-
 /****** Fallunterscheidung / SWITCH|CASE 1 ******/
 
 const firstName = "Jane";
@@ -77,3 +73,30 @@ job = "artist"; // .. malt ein Bild!
 job = "pilot"; // .. macht etwas anderes! --> default
 job = "teacher"; // .. unterrichtet!
 job = "instructor"; // .. unterrichtet!
+
+
+switch (job) 
+{
+    case "driver": // job == "driver"
+    console.log(firstName + " fährt TAXI!")
+    break; // "break" trennt die Test's unter einander sonst werden mehrere ergebnise angezeitg!!
+            case "diver": 
+            console.log(firstName + " taucht im Rhein!")
+            break;
+                    case "artist": 
+                    console.log(firstName + " malt ein Bild!")
+                    break;
+                            case "teacher": 
+                            case  "instructor":
+                            console.log(firstName + " unterrichtet!")
+                            break;
+                                    // case "instructor":  // das gleiche wie zwei case´s unter einander mit gleichem ergebnis!!! sie eine oben
+                                    // console.log(firstName + " unterrichtet!")
+                                    // break;
+
+    default: // Wichtig!!
+            console.log(firstName + " macht etwas anderes!")
+
+        break;
+}
+
