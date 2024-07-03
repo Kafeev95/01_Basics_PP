@@ -12,21 +12,21 @@ const birthYearMark = 1990;
 // ageMark = year - birthYearMark;
 
 // Berechnung Alter Iteration 2
-let date = new Date();
-let year = date.getFullYear();
-console.log("Datum " + date);
-// console.log("Jahr " + date.getFullYear()); das gleiche wie das darunter da wir year schon bestimmt haben
-console.log("Jahr " + year);
-ageJohn = year - birthYearJohn;
-ageMark = year - birthYearMark;
+// let date = new Date();
+// let year = date.getFullYear();
+// console.log("Datum " + date);
+// // console.log("Jahr " + date.getFullYear()); das gleiche wie das darunter da wir year schon bestimmt haben
+// console.log("Jahr " + year);
+// ageJohn = year - birthYearJohn;
+// ageMark = year - birthYearMark;
 
 // Berechnung Alter Iteration 2
-let date = new Date().getFullYear(); // zusammfasung von 2.
+let year = new Date().getFullYear(); // zusammfasung von 2.
 ageJohn = year - birthYearJohn;
 ageMark = year - birthYearMark;
 
 
 // Ausgabe
-// console.log("ageJohn: " + ageJohn);
-// console.log("ageMark: " + ageMark);
+console.log("ageJohn: " + ageJohn);
+console.log("ageMark: " + ageMark);
 
