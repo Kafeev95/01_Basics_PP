@@ -1,25 +1,24 @@
 // Entscheidungsstrukturen | control flow
 
 // Deklaration + Assignment
-const ageJohn = 50;
-const ageMark = 50;
+// const ageJohn = 50;
+// const ageMark = 50;
 
-// Deklaration
-let isJohnOlder, isJohnEqual;
-// let isMarkOlder
+// // Deklaration
+// let isJohnOlder, isJohnEqual;
+// // let isMarkOlder
 
-// Test | Logische Aussage
-isJohnOlder = (ageJohn > ageMark);
-isJohnEqual = (ageJohn == ageMark);
+// // Test | Logische Aussage
+// isJohnOlder = (ageJohn > ageMark);
+// isJohnEqual = (ageJohn == ageMark);
 // isMarkOlder = (ageMark > ageJohn);
 
 // Ausgabe
-console.log("ageJohn: " + ageJohn);
-console.log("ageMark: " + ageMark);
-console.log("isJohnOlder: " + isJohnOlder);
-console.log("isJohnEqual: " + isJohnEqual);
-
-console.log("------------------");
+// console.log("ageJohn: " + ageJohn);
+// console.log("ageMark: " + ageMark);
+// console.log("isJohnOlder: " + isJohnOlder);
+// console.log("isJohnEqual: " + isJohnEqual);
+// console.log("------------------");
 
 /************ IF  ************/
 // TINA --> There is no alternative!
@@ -53,17 +52,28 @@ console.log("------------------");
 
 /************ IF - ELSE  ************/
 // mit Alternative  
-// entweder ja oder nein
+// entweder ja oder nein (+ gleich alt)
 
 
 // if (isJohnEqual) {
 //     console.log("John und Mark sind gleich alt.");
 //     } else if (isJohnOlder) 
 //          {console.log("John ist älter.");
-//                                          } else {  console.log("Mark ist älter."); }
+//                                          } else {  console.log("Mark ist älter."); }    // das ist meine Lösung... ist auch richtig!!!
 
     
 /************  Ternäre (ternary) Schreibweise ************/
 // console.log( (isJohnOlder) ? "John is older" : "Mark is older");
 
 
+/****** Fallunterscheidung / SWITCH|CASE 1 ******/
+
+const firstName = "Jane";
+let job;
+
+job = "driver";  // .. fährt TAXI! / UBER
+job = "diver"; // .. taucht im Rhein! 
+job = "artist"; // .. malt ein Bild!
+job = "pilot"; // .. macht etwas anderes! --> default
+job = "teacher"; // .. unterrichtet!
+job = "instructor"; // .. unterrichtet!
