@@ -87,7 +87,7 @@ function getString(firstName, familyName)
         const GAP = " "
         let outputStr = "Haollo,"+ GAP + firstName + GAP + familyName +  "!"
         return outputStr; // return achickt die Daten an den call ...
-
+        console.log("hi"); // nach Return wird fie Fkt. abgebrochen
 }
 
 
