@@ -32,8 +32,8 @@ function ausgabeNamen()
 /***** Funktionen 02b *****/
 // 2b. Parametrisierung + Datenübergabe von AUSSEN
  
-ausgabeNamen2("Peter"); // Argument --> Daten für Parameter
-ausgabeNamen2("Max");
+// ausgabeNamen2("Peter"); // Argument --> Daten für Parameter
+// ausgabeNamen2("Max");
 
 function ausgabeNamen2(firstName) // Parameter
 {
@@ -41,4 +41,16 @@ function ausgabeNamen2(firstName) // Parameter
     
 }
 
+/***** Funktionen 02c *****/
+// 2c. Mehrere Parameter / Argumente
+
+// ausgabeNamenParams("Max ", "Muster");
+
+const prompt = require('prompt-sync')({sigint: true});
+ausgabeNamenParams(prompt("Vorname: "), prompt("Nachname: "));
+
+function ausgabeNamenParams(firstName, familyName) 
+{
+    console.log("Haollo, " + firstName + familyName +  "!");
+}
 
