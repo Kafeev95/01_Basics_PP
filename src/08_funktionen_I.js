@@ -2,6 +2,8 @@
 /***** Funktionen 01 *****/
 // 1. Kapselung von Codeblöcken
 
+// const { getString } = require("./getString");
+
 // Funktionsrupf / call
 // test();
 
@@ -59,7 +61,7 @@ function ausgabeNamenParams(firstName, familyName)
 // Postulat: one function = one job (uncle Bob)
 // SRP single responsibility principle
 
-ausgabeNamenSRP("Max","Mütze");
+// ausgabeNamenSRP("Max","Mütze");
 
 
 function ausgabeNamenSRP(firstName, familyName) 
@@ -74,3 +76,29 @@ function ausgabeNamenSRP(firstName, familyName)
 }
 
 
+/***** Funktionen 03b *****/
+
+ // 1. Funktionalität: string composing
+
+ output(getString("Max","Mütze"))
+
+function getString(firstName, familyName)
+{
+        const GAP = " "
+        let outputStr = "Haollo,"+ GAP + firstName + GAP + familyName +  "!"
+        return outputStr; // return achickt die Daten an den call ...
+
+}
+
+
+// 2. Funktionalität: string output
+// output("hi")
+// output(2);
+// output(true);
+
+function output(outputData) 
+{
+
+    console.log(outputData);
+
+}
