@@ -14,7 +14,7 @@
 const ERROR_STR_DIV = "Teilung durch Null ist nicht möglich."
 const ERROR_STR_GEN = "Irgendwas ging schief!";
 // module: calculator | tests:
-agreement : "+","-","*",":","/"
+//agreement : "+","-","*",":","/"
 // output(calculator(3,2,"+"));
 // output(calculator(3,2,"-"));
 // output(calculator(3,2,"*"));
