@@ -10,6 +10,9 @@
 4. Ausgabe in Konsole : 
 */
 
+
+const ERROR_STR_DIV = "Teilung durch Null ist nicht möglich."
+
 // module: addition a + b |  test:
 // output(add(2,2));
 // output(add(2,-2));
@@ -46,7 +49,7 @@ function divide(a,b)
 	if (b!=0) {
 		return  a / b;
 	} 
-		else { return "Teilung durch Null ist nicht möglich."
+		else { return ERROR_STR_DIV;
 	}
 	
 	}
