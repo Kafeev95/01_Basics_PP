@@ -10,9 +10,24 @@
 4. Ausgabe in Konsole : 
 */
 
-
+const prompt = require('prompt-sync')({sigint: true});
 const ERROR_STR_DIV = "Teilung durch Null ist nicht möglich."
 const ERROR_STR_GEN = "Irgendwas ging schief!";
+
+startApp()
+function startApp() {
+	output(calculator(getNum1(),getOp(),getNum2()));
+}
+function getNum1() {
+	return parseFloat(prompt("1. Zahl?: "));
+}
+function getNum2() {
+	return parseFloat(prompt("2. Zahl?: "));
+}
+function getOp() {
+	return prompt("OP?: ");
+}
+
 // module: calculator | tests:
 //agreement : "+","-","*",":","/"
 // output(calculator(3,2,"+"));
@@ -24,7 +39,7 @@ const ERROR_STR_GEN = "Irgendwas ging schief!";
 // output(calculator(3,2,"#?!"));
 
 
-function calculator(a,b,op) {
+function calculator(a,op,b) {
 
 	switch (op) {
 		case "+": // Addition
