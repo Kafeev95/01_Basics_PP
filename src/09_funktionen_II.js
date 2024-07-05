@@ -12,6 +12,41 @@
 
 
 const ERROR_STR_DIV = "Teilung durch Null ist nicht möglich."
+const ERROR_STR_GEN = "Irgendwas ging schief!";
+// module: calculator | tests:
+agreement : "+","-","*",":","/"
+// output(calculator(3,2,"+"));
+// output(calculator(3,2,"-"));
+// output(calculator(3,2,"*"));
+// output(calculator(3,2,":"));
+// output(calculator(3,2,"/"));
+// output(calculator(3,0,"/"));
+// output(calculator(3,2,"#?!"));
+
+
+function calculator(a,b,op) {
+
+	switch (op) {
+		case "+": // Addition
+			return add(a,b);
+			break;
+					case "-": // Subtraktion
+						return subtract(a,b);
+						break;
+								case "*": // Multiplikatopn
+									return multiply(a,b);
+									break;
+											case "/": // Divison
+											case ":":
+												return divide(a,b);
+												break;
+		default: 
+		return ERROR_STR_GEN;
+			break;
+	}
+	
+}
+
 
 // module: addition a + b |  test:
 // output(add(2,2));
@@ -37,17 +72,14 @@ function multiply(a,b)
 {return  a * b;}
 
 // module: division a / b |  test:
-output(divide(4,2));
-output(divide(3,2));
-output(divide(3,-2));
-output(divide(0,2));
-output(divide(3,0));
-output(divide(0,0));
+// output(divide(4,2));
+// output(divide(3,2));
+// output(divide(3,-2));
+// output(divide(0,2));
+// output(divide(3,0));
+// output(divide(0,0));
 
 function divide(a,b) 
-
-
-
 {
 	if (b==0) {
 			return ERROR_STR_DIV; // Ausnahme
