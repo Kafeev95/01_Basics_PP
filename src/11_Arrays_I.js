@@ -8,7 +8,7 @@
 
 /*** 02. Theorie: Array */
 
-let arr;
+// let arr;
 
 // arr = new Array(); // Konstruktor
 // arr = []; // Literal
@@ -37,10 +37,20 @@ let arr;
 // }
 
 // Inkrement (var. Schrittweite)
-for (let i = 10; i <= 100; i += 5) 
-{
-   output(i);   
-}
+// for (let i = 10; i <= 100; i += 5) 
+// {
+//    output(i);   
+// }
+
+/* 02b. For-Schleife für Array-Index (Iteration)*/
+
+// let arr = ["Ich","bin","die","coole","Maxine","Mützerich"];
+// for (let i = 0; i < arr.length; i++) 
+// {
+// //    output(i); 
+//    output(arr[i]); // Mapping intern --> extern
+// }
+
 
 
 
@@ -90,6 +100,29 @@ function getSentenceArr(arr) {
 
     return str;
 }
+
+/*** 01b. Funktionalität mit Array 2  */
+// Transponierung:  untereinander ---> nebeneinander
+// Helge Schneider: Anananandereihung ...
+
+output(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
+
+function getSentenceArr2(arr) {
+    const GAP = " ";
+    const PUNCT = ".";
+    let str =   arr[0] + GAP +
+                arr[1] + GAP +
+                arr[2] + GAP +
+                arr[3] + GAP +
+                arr[4] + GAP +
+                arr[5] +     
+                PUNCT;
+
+    return str;
+}
+
+
+
 
 
 
