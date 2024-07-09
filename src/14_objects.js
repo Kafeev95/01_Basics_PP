@@ -1,13 +1,13 @@
 /***** Erinnerung: Arrays *******/
 
-let arr;
-// arr = ["Ich","bin","Max"];
-// output(arr);
-// output(arr[0]);
-// output("------------");
+// let arr;
+// // arr = ["Ich","bin","Max"];
+// // output(arr);
+// // output(arr[0]);
+// // output("------------");
 
-// nested arrays - Prinzip: [[[]]]
-// nested arrays  - hier: [[],[]]
+// // nested arrays - Prinzip: [[[]]]
+// // nested arrays  - hier: [[],[]]
 // arr =   [
 //             ["Ich","bin","Max"],
 //             ["Ich","bin","Moritz"]
@@ -19,7 +19,7 @@ let arr;
 // output(arr[1][0]);
 // output("------------");
 
-// // nested loop
+// // // nested loop
 // for (let i = 0; i < arr.length; i++) {
 //     for (let j = 0; j < arr[i].length; j++) {
 //         output("Index i: " + i + " Index j: " + j);
