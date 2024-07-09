@@ -63,7 +63,7 @@ const TAB_STR = "\t";
 let stack = [];
 
 // Modul: HTML-Synthese | Test
-//output(getHTML());
+// output(getHTML());
 function getHTML() {
 
     let htmlStr = "";
@@ -114,9 +114,9 @@ function isOpenElement(tag) {
 }
 
 // Modul: Zusammenbau der Elements: <tagStr> --> Tests:
-// output(getElement(tags[1],"open"));
-// output(getElement(tags[1],"close"));
-// output(getElement(tags[1]));
+// output(getElement(TAGS[1],"open"));
+// output(getElement(TAGS[1],"close"));
+// output(getElement(TAGS[1]));
 function getElement(tag,op) {
     switch (op) {
         case "open":
@@ -124,7 +124,7 @@ function getElement(tag,op) {
         case "close":
             return COBJ.close_o + tag + COBJ.close;
         default:
-            return ERR_STR;
+            return "ERROR";
     }
 }
 
