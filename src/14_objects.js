@@ -63,8 +63,28 @@
 // Modul: Ausgabe | Test
 //output("hi");
 
+/***** Objekte 2 - Hierarchie *******/
+// Tiefer, tiefer - Irgendwo in der Tiefe gibt es ein Licht // K.Bush
+// Der Baikalsee ist mit 1642 m der tiefste See der Erde. ...
+// deep - deeper - deepest
+// nested object {{{}}}
 
 
+let baikal = {
+
+            value:"10m"
+            deep: {
+                deeper:{
+                    temperature:"4 Grad Celsius"
+                    deepest:""
+                }
+            }
+
+
+            };
+
+            output(baikal);
+            output(baikal.value);
 
 
 
