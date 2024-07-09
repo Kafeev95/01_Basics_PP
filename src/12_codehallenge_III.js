@@ -52,25 +52,55 @@ output(getSentence(["Ich","hätt","gern","die","Platt","von","dene","zwei","diwo
 
 /* Iteration 2 */
 
-function getSentence(arr, op) {
-    // Verbinde die Wörter im Array mit Leerzeichen, um den Basis-Satz zu formen
-    let sentence = arr.join(" ");
+// function getSentence(arr, op) {
+//     // Verbinde die Wörter im Array mit Leerzeichen, um den Basis-Satz zu formen
+//     let sentence = arr.join(" ");
 
-    // Definiere ein Objekt für die Zuordnung der Interpunktion
-    const punctuationMap = {
-        "S": ".",
-        "Q": "?",
-        "E": "!"
-    };
+//     // Definiere ein Objekt für die Zuordnung der Interpunktion
+//     const punctuationMap = {
+//         "S": ".",
+//         "Q": "?",
+//         "E": "!"
+//     };
 
-    // Bestimme die passende Interpunktion basierend auf dem 'op' Parameter
-    // Wenn der Parameter ungültig ist, nutze standardmäßig einen Punkt.
-    let punctuation = punctuationMap[op] || ".";
+//     // Bestimme die passende Interpunktion basierend auf dem 'op' Parameter
+//     // Wenn der Parameter ungültig ist, nutze standardmäßig einen Punkt.
+//     let punctuation = punctuationMap[op] || ".";
 
-    // Gib den Satz mit der korrekten Interpunktion zurück
-    return sentence + punctuation;
+//     // Gib den Satz mit der korrekten Interpunktion zurück
+//     return sentence + punctuation;
+// }
+
+// Dozenten Lösung
+
+function getSentence(arr,op) {
+    const GAP = " ";
+    const PUNCT = getPunct(op);  // . ? !
+    let str = ""; 
+
+    for (let i = 0; i < arr.length; i++) {
+        if (i != arr.length-1) {
+            str += arr[i] + GAP;
+        } else {
+            str += arr[i] + PUNCT; 
+        }
+    }
+     return str;
 }
 
+
+function getPunct(op) {
+    switch (op) {
+        case "S":
+           return "."; 
+        case "Q":
+            return "?";
+        case "E":
+            return "!";
+        default:
+            return "#";
+    }
+}
 
 // Modul: Ausgabe in Konsole : Test
 // output("hi"); 
