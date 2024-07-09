@@ -30,19 +30,19 @@
 
 /***** Objekte 1 Daten/Funktionen *******/
 
-let person = {
+// let person = {
 
-                firstName:"Marco",
-                familyName: "Mustermann",
-                salary:[120000,160000],
-                permission: true,
-                sayHello: function () {
-                                    // return "Hallo"
-                                    return "Hallo ich bin " + this.firstName;
-                      }
+//                 firstName:"Marco",
+//                 familyName: "Mustermann",
+//                 salary:[120000,160000],
+//                 permission: true,
+//                 sayHello: function () {
+//                                     // return "Hallo"
+//                                     return "Hallo ich bin " + this.firstName;
+//                       }
 
 
-            };
+//             };
 
 // output(person);
 
@@ -56,12 +56,19 @@ let person = {
 // const txt = person.sayHello() + ", ich bin " + person.firstName +
 //             " und verdiene " + person.salary[1] + " p.a."
 
-const txt = person.sayHello() + " und verdiene " + person.salary[1] + " p.a."
+// const txt = person.sayHello() + " und verdiene " + person.salary[1] + " p.a."
 
-output(txt)
+// output(txt)
 
 // Modul: Ausgabe | Test
 //output("hi");
+
+
+
+
+
+
+
 function output(outputData) {
     console.log(outputData);
 }
